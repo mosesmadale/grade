@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisa - Produce Mock Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jspdf.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <script defer src="ins.js"></script>
+    <header>Trisa Design</header>
+    <section id="main-content">
+        <section id="title">Produce Grade Certificate</section>
+        <section id="candidate-inputs">
+            <section id="name-input">
+                <div class="subtitle-small">Candidate Name</div>
+                <input type="text" id="candidate-name" class="input-generic">
+            </section>
+            <section id="candidate-number">
+                <div class="subtitle-small">Candidate Number</div>
+                <input type="text" id="candidate-number-input" class="input-generic">
+            </section>
+        </section>
+
+        <section id="subjects-input">
+            <div class="subtitle-small">
+                Subjects
+            </div>
+            <div class="subject-input-container">
+
+            </div>
+            <div class="plus-cont">
+                <div class="plus">+
+                    <div style="display: none;" class="popup-for-message-2">Please save all the other subjects before creating a new one!</div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="submit-button">
+            <div class="submit-button">Produce
+                <div style="display: none;" class="popup-for-message">Please make sure you have entered data in all spaces, and you have saved each subject info</div>
+            </div>
+        </section>
+    </section>
+    <section id="overlay" style="display: none;">
+        <section id="popup">
+            <div class="subtitle-small">
+                Grade Certificate - Ready
+            </div>
+            <div class="popup-content">
+                <div class="dummy-image-container">
+                    <div class="dummy-image"></div>
+                </div>
+                <div class="print-buttons">
+                    <div class="print-button">Preview & Print</div>
+                    <div class="save-button">Save as PDF</div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
